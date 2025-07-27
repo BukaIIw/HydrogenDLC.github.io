@@ -4,22 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HydrogenDLC</title>
-  <!-- Добавление иконки -->
-  <link rel="icon" type="image/png" href="https://i.postimg.cc/jS6sdPZz/Screenshot-20.png">
   <style>
     /* Общие стили */
     body {
       font-family: 'Arial', sans-serif;
-      background-color: #121212;
+      background-color: #0a0a0a; /* Темный фон */
       color: #fff;
       margin: 0;
       padding: 0;
       line-height: 1.6;
+      overflow-x: hidden;
     }
 
     /* Контейнер */
     .container {
-      max-width: 800px;
+      max-width: 1200px;
       margin: 0 auto;
       padding: 20px;
     }
@@ -27,47 +26,55 @@
     /* Шапка */
     header {
       text-align: center;
-      margin-bottom: 40px;
+      padding: 40px 0;
+      background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     }
 
     .logo {
-      font-size: 2.5em;
-      color: #007bff;
-      text-shadow: 0 0 10px #007bff;
+      font-size: 3em;
+      color: #00ff88; /* Неоновый зеленый */
+      text-shadow: 0 0 20px #00ff88, 0 0 40px #00ff88;
+      margin: 0;
+      letter-spacing: 3px;
+      font-weight: bold;
     }
 
     /* Кнопка скачивания */
     .download-btn {
-      display: block;
-      width: 100%;
-      max-width: 300px;
-      margin: 0 auto 40px;
-      padding: 15px;
-      background-color: #007bff;
-      color: #fff;
-      text-align: center;
+      display: inline-block;
+      background-color: #00ff88;
+      color: #0a0a0a;
+      padding: 15px 30px;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 30px;
       font-size: 1.2em;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-      transition: background-color 0.3s;
+      margin-top: 20px;
+      box-shadow: 0 0 20px #00ff88;
+      transition: transform 0.3s, box-shadow 0.3s;
     }
 
     .download-btn:hover {
-      background-color: #0056b3;
+      transform: scale(1.05);
+      box-shadow: 0 0 30px #00ff88;
     }
 
     /* Новости */
+    .news-section {
+      margin-top: 40px;
+    }
+
     .news {
-      background-color: #1f1f1f;
+      background-color: #1a1a1a;
       padding: 20px;
       border-radius: 10px;
       margin-bottom: 20px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      border-left: 4px solid #00ff88;
     }
 
     .news h2 {
-      color: #007bff;
+      color: #00ff88;
       margin-top: 0;
     }
 
@@ -80,27 +87,48 @@
       display: block;
       margin-top: 10px;
     }
+
+    /* Футер */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1a1a1a;
+      margin-top: 40px;
+      box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    footer p {
+      margin: 0;
+      color: #888;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <header>
       <h1 class="logo">HydrogenDLC</h1>
-      <a href="https://drive.usercontent.google.com/download?id=1yW-NflwX-SD4iR6ADwn0BbOX_wrQaJzR&export=download&authuser=0&confirm=t&uuid=b501b01d-a30e-4fbf-9143-f7f86b07c8bf&at=AN8xHorHQkq9qA8y62q_v_sMSBbz%3A1753658144246" class="download-btn">Скачать HydrogenDLC</a>
+      <a href="https://drive.usercontent.google.com/download?id=1yW-NflwX-SD4iR6ADwn0BbOX_wrQaJzR&export=download&authuser=0&confirm=t&uuid=b501b01d-a30e-4fbf-9143-f7f86b07c8bf&at=AN8xHorHQkq9qA8y62q_v_sMSBbz%3A1753658144246" class="download-btn">Скачать Loader</a>
     </header>
 
     <!-- Новости -->
-    <div class="news">
-      <h2>Обновление 1.0.3</h2>
-      <p>В этом обновлении мы исправили несколько ошибок и улучшили стабильность работы. Также добавлена поддержка новых устройств.</p>
-      <small>Опубликовано: 20 октября 2023</small>
-    </div>
+    <section class="news-section">
+      <div class="news">
+        <h2>Обновление 1.0.3</h2>
+        <p>В этом обновлении мы добавили "умный чит" для Minecraft, который автоматически адаптируется под игровой процесс. Также исправлены ошибки и улучшена стабильность работы Loader'а.</p>
+        <small>Опубликовано: 20 октября 2023</small>
+      </div>
 
-    <div class="news">
-      <h2>Новые функции</h2>
-      <p>В следующей версии ожидайте новые функции для улучшения игрового опыта. Следите за обновлениями!</p>
-      <small>Опубликовано: 15 октября 2023</small>
-    </div>
+      <div class="news">
+        <h2>Новые функции в Loader'е</h2>
+        <p>В следующей версии ожидайте еще больше возможностей для читов в Minecraft. Следите за обновлениями!</p>
+        <small>Опубликовано: 15 октября 2023</small>
+      </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+      <p>© 2023 HydrogenDLC. Все права защищены.</p>
+    </footer>
   </div>
 </body>
 </html>
